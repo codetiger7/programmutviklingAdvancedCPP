@@ -31,17 +31,12 @@ int main()
    {
 
       Url myUrl = urlString;
-      // set protocol:  http://
-      // set resource name: www.google.com
-//      divideUrl(urlString, protocol, resource);
-
-//      Url myUrl(protocol, resource);
-
       urlH.storeUrl(myUrl);
    }
 
-
    urlH.displayUrls();
+
+
 
    cout << endl;
    cout << endl;
