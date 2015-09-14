@@ -8,14 +8,20 @@ class Url
 public:
    Url() = default;
    Url(const std::string& prot, const std::string& res);
+   Url(const std::string& urlS);
+
+
    std::string getProtocol() const;
    std::string getResource() const;
    std::string getCompleteUrl() const;
    bool emptyUrl();
 
+   void divideUrl(const std::string& urlString, std::string& protocol, std::string& resource);
+
 private:
    std::string protocol_;
    std::string resource_;
+   std::string urlString_;
 
 };
 
