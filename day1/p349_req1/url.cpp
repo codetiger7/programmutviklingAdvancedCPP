@@ -11,6 +11,11 @@ Url::Url(const std::string& prot, const std::string& res)
    resource_ = res;
 }
 
+Url::Url(const std::string& urlS)
+{
+   urlString_ = urlS;
+}
+
 std::string Url::getProtocol() const
 {
    return protocol_;

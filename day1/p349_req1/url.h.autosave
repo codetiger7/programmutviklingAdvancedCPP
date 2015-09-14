@@ -8,6 +8,9 @@ class Url
 public:
    Url() = default;
    Url(const std::string& prot, const std::string& res);
+   Url(const std::string& urlString);
+   
+   
    std::string getProtocol() const;
    std::string getResource() const;
    std::string getCompleteUrl() const;

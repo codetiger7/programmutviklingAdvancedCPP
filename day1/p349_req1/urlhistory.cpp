@@ -27,7 +27,7 @@ void UrlHistory::displayUrls()
 {
    for (unsigned i = 0; i != urlStorage.size(); ++i)
    {
-      std::cout << urlStorage[i].getResource() << std::endl;
+      std::cout << urlStorage[i].getResource() << ", ";
    }
 }
 
