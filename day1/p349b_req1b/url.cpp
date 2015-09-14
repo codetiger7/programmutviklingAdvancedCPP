@@ -52,3 +52,7 @@ Url::divideUrl(const std::string& urlString, std::string& protocol, std::string&
 }
 
 
+Url::operator std::string() const
+{
+   return urlString_;
+}

@@ -10,10 +10,9 @@ int main()
    string u = "http://www.google.com";
    Url myUrl = u;
 
-   string urlString;
+   string uStr = myUrl;
 
-   cout << myUrl.getProtocol() << endl;
-   cout << myUrl.getResource() << endl;
+   cout << uStr << endl;
 
 
    cout << "\n\n\n";

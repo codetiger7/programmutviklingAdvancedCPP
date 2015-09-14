@@ -18,12 +18,16 @@ public:
 
    void divideUrl(const std::string& urlString, std::string& protocol, std::string& resource);
 
+   operator std::string() const;
+
 private:
    std::string protocol_;
    std::string resource_;
    std::string urlString_;
-
 };
+
+
+
 
 
 
