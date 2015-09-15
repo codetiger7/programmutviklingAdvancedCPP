@@ -13,9 +13,9 @@ public:
    {
    }
 
-   int getDay()   { return day; }
-   int getMonth() { return month; }
-   int getYear()  { return year; }
+   int getDay()   const   { return day; }
+   int getMonth() const { return month; }
+   int getYear()  const  { return year; }
 
 private:
    int day;
@@ -23,6 +23,25 @@ private:
    int year;
 };
 
+
+bool operator == (const Date& lhs, const Date& rhs)
+{
+   return (lhs.getDay() == rhs.getDay()) &&
+          (lhs.getMonth() == rhs.getMonth()) &&
+          (lhs.getYear() == rhs.getYear());
+}
+
+bool operator != (const Date& lhs, const Date& rhs)
+{
+   return !(lhs == rhs);
+}
+
+bool operator < (const Date& lhs, const Date& rhs)
+{
+   return (lhs.getYear() < rhs.getYear()) ||
+          (lhs.getMonth() < rhs.getMonth()) ||
+          (lhs.getDay() < rhs.getDay());
+}
 
 
 #endif // DATE
