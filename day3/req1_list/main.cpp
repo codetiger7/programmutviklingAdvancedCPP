@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 #include "strlist.h"
+#include <vector>
+#include <iterator>
 
 using namespace std;
 
@@ -66,8 +68,25 @@ int main()
 
 
 
+   // general iterator info
+
+   std::vector<int> v;
+   v.push_back(4);
+   v.push_back(3);
+   v.push_back(8);
+   vector<int>::const_iterator beg = v.begin();
+   vector<int>::const_iterator end = v.end();
+
+   cout << distance(beg, end) << endl;
+
+   tra
 
 
+
+
+
+   // requirement 3
+   // add clear functionality
 
 
 
