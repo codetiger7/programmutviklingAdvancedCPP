@@ -6,12 +6,11 @@ CONFIG += c++11
 
 
 SOURCES += main.cpp \
-    date.cpp
+    handle.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    date.h \
-    handledate.h
+    handle.h
 

@@ -1,5 +1,5 @@
 #include <iostream>
-#include <date.h>
+#include <handle.cpp>
 #include <stdexcept>
 using namespace std;
 
@@ -9,7 +9,7 @@ int main()
 
 
 
-   HandleDate d(4,8,2015);
+   Handle d(4,8,2015);
 
    cout << d.getYear() << endl;
 
