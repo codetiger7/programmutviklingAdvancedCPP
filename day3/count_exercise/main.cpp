@@ -21,7 +21,7 @@ public:
    }
 
 private:
-   static int cnt;
+   static const int cnt = 0;
 };
 
 
